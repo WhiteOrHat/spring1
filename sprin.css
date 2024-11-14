@@ -1,0 +1,158 @@
+/* Стили для общего сброса отступов и границ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Верхний блок с логотипом и меню */
+.header {
+    display: flex;
+    background: rgb(128, 10, 10);
+    align-items: center;
+    padding: 10px 40px 10px 20px;
+}
+.image{
+    width: 30%;
+    height: 30%;
+}
+.logo h3 {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.menu p {
+    color: lightcyan;
+    cursor: pointer;
+}
+
+/* Основной блок с новостью */
+.main-news {
+    display: flex;
+    gap: 20px;
+    background-color: #8cd8e5;
+    padding: 20px;
+    margin: 20px;
+}
+
+.news-image {
+    width: 40%;
+}
+
+.news-content {
+    width: 60%;
+}
+
+.news-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.news-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* Заголовок для блока последних новостей */
+.latest-news-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+/* Блок с последними новостями */
+.contentNews {
+    background: bisque;
+    display: flex;
+}
+.pageLabel {
+    text-align: center;
+}
+.headerNews {
+    font-size: 30px;
+    font-weight: bold;
+}
+/* Контейнер для новостей */
+.news4 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Контейнер для изображений и текста */
+.news1, .news2, .news3, .news1234 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Контейнер для изображений */
+.suret1, .suret2, .suret3, .suret4 {
+    width: 100%;
+    height: 100%; /* Фиксированная высота для контейнеров изображений */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-grow: 1; /* Заполнение оставшегося пространства */
+}
+
+/* Контейнер для текста */
+.text1, .text2, .text3, .text4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    height: 60px; /* Фиксированная высота для текста */
+}
+
+
+/* Изображения */
+.suret1 img, .suret2 img, .suret3 img, .suret4 img {
+    width: 100%;
+    height: 100%; /* Задает высоту изображения по размеру контейнера */
+    object-fit: cover;
+}
+
+/* Текст под изображением */
+.text1, .text2, .text3, .text4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px; /* Увеличенный шрифт текста */
+}
+
+/* Кнопка */
+button {
+    margin-top: 10px;
+    width: 150px; /* Увеличенная ширина кнопки */
+    height: 45px; /* Увеличенная высота кнопки */
+    border: 1px solid transparent;
+    background-color: #95ecef;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a02814;
+}
